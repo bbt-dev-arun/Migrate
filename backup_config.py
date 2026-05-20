@@ -6,13 +6,13 @@ import json
 # =========================================================
 
 # The Firebase Project ID. If empty or None, it will be automatically parsed from the SERVICE_ACCOUNT_FILE
-PROJECT_ID = "globalinternational-f42034"
+PROJECT_ID = "momai-9a2f4"
 
 # Path to the Firebase service account JSON key file
-SERVICE_ACCOUNT_FILE = "globalinternational-f42034-ffd0ed4ddd.json"
+SERVICE_ACCOUNT_FILE = "momai-9a2f4-6e987e1bd536.json"
 
 # Optional: Override the storage bucket name. If None, it will default to <project_id>.appspot.com
-STORAGE_BUCKET_OVERRIDE = "globalinternational-f42034.firebasestorage.app"
+STORAGE_BUCKET_OVERRIDE = "momai-9a2f4.firebasestorage.app"
 
 
 # =========================================================
@@ -37,6 +37,7 @@ def get_backup_paths(project_id=None):
         "firestore_backup": os.path.join(base_dir, "firestore_backup"),
         "storage_backup": os.path.join(base_dir, "storage_backup"),
         "function_backup": os.path.join(base_dir, "function_backup"),
+        "index_backup": os.path.join(base_dir, "index_backup"),
         "key": os.path.join(base_dir, "key"),
         "realtime_db_backup": os.path.join(base_dir, "realtime_db_backup"),
         "hosting_image_backup": os.path.join(base_dir, "hosting_image_backup"),
